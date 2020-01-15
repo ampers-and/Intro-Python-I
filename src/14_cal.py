@@ -31,8 +31,11 @@ def print_cal(m=m_current, y=y_current):
     print(calendar.month(y, m))
 
 
-x = input("14_cal.py ").split(" ")
-y = [int(i) for i in x if i != '']
+# x = input("14_cal.py ").split(" ")
+# y = [int(i) for i in x if i != '']
+
+x = sys.argv
+y = [int(i) for i in x if i != '14_cal.py']
 
 
 if len(y) < 3:
